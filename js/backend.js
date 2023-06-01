@@ -1,5 +1,5 @@
 //Function to update profile
-var url = 'http://localhost:8085/doctor/details/'+sessionStorage.getItem("doctor");
+var url = 'https://locdoc-bknd.onrender.com/doctor/details/'+sessionStorage.getItem("doctor");
 fetch(url)
     .then(response =>
     {
@@ -34,7 +34,7 @@ function updateDoctorProfile(){
 
 
     var settings = {
-        "url": "http://localhost:8085/doctor/add",
+        "url": "https://locdoc-bknd.onrender.com/doctor/add",
         "method": "POST",
         "timeout": 0,
         "headers": {
@@ -58,6 +58,4 @@ function updateDoctorProfile(){
 
 
 }
-
-// Function to convert JSON data to HTML table
 

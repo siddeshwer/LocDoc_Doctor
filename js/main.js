@@ -123,7 +123,7 @@
    $(document).ready(function (){
        console.log("Userrrr");
       var navLogin = document.getElementById("navLogin");
-      if(sessionStorage.getItem("user"))
+      if(sessionStorage.getItem("doctor"))
       {
        $("#navLogin").hide();
        $("#navProfile").show();

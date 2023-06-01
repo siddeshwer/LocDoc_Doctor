@@ -32,7 +32,7 @@
 
 <body>
 <!-- Topbar Start -->
-<div class="container-fluid py-2 border-bottom d-none d-lg-block">
+<!--<div class="container-fluid py-2 border-bottom d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
@@ -63,7 +63,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Topbar End -->
 
 
@@ -80,7 +80,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="appointment.html" class="nav-item nav-link">Appointments</a>
-                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="detail.html" class="nav-item nav-link">Blog</a>
                     <a href="profile.html" id="navProfile" class="nav-item nav-link">Profile</a>
                     <a id="logoutUser" href="# " class="nav-item nav-link" on>Logout</a>
                     <a href="login.html" id="navLogin" class="nav-item nav-link">Login/Signup</a>
@@ -124,11 +124,10 @@
     <!-- Appointment End -->
 
 
-<footer></footer>
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+   <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>-->
 
 
     <!-- JavaScript Libraries -->
@@ -172,7 +171,7 @@
 <script>
 
     function updateDoctorAppointmentTable() {
-        var url = "http://localhost:8085/appointment/details/" + sessionStorage.getItem("doctor");
+        var url = "http://localhost:8088/appointment/details/ab@c.com";
         fetch(url)
             .then(function (response) {
                 return response.json();
